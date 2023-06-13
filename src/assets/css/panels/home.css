@@ -1,0 +1,565 @@
+.left-bar-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 150px;
+    height: 89%;
+    background: #00000080;
+    top: 80px;
+    left: 0px;
+    border-radius: 0px;
+}
+
+
+.settings-btn {
+    background-image: url('../../images/logo/BtnSettings.png');
+    background-color: #00000002;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    margin-right: 15px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+}
+
+
+
+
+.play-btn {
+    top: 2%;
+    width: 80%;
+    height: 45px;
+    border-radius: 0px;
+    border: none;
+    background: #fdd41d;
+    font: normal normal bold 20px/25px Poppins;
+    color: #121212;
+    margin: 15px 0;
+    box-shadow: 0 0 5px #d69303;
+}
+
+.download-content {
+    position: absolute;
+    width: 130px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-download,
+.progress-bar {
+    display: none;
+}
+
+.text-download {
+    font-size: 15px;
+}
+
+.progress-bar {
+    width: 130px;
+    background-color: transparent;
+    height: 10px;
+}
+
+.progress-bar::-webkit-progress-bar {
+    background-color: #797979;
+    border-radius: 10px;
+}
+
+.progress-bar::-webkit-progress-value {
+    background-color: #383673;
+    border-radius: 10px;
+}
+
+.body-home {
+    display: flex;
+    height: 78vh;
+    margin: 3rem 2rem;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.news-list {
+    margin-left: 158px;
+    margin-top: 158px;
+    position: relative;
+    overflow: auto;
+    width: 565px;
+}
+
+.news-list::-webkit-scrollbar {
+    width: 0;
+}
+
+.news-block {
+    margin-bottom: 1rem;
+    transition: opacity 1s;
+    opacity: .4;
+}
+
+.news-block:hover {
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+.news-header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 85px;
+    background-color: #292929;
+    border-radius: 0px 0px 0px 0px;
+    transition: color .2s, filter .2s;
+}
+
+.title {
+    position: absolute;
+    font: normal normal bold 27px/40px Poppins;
+    letter-spacing: 0px;
+    color: #E1E1E1;
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    max-width: calc(100% - 158px);
+    font-weight: 600;
+    font-size: 18px;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+    overflow: hidden;
+    line-height: 25px;
+    align-items: center;
+    height: 3em;
+    transition: color .2s;
+}
+
+.date {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #E1E1E1;
+    width: 75px;
+    text-align: center;
+    font-weight: 900;
+    font-family: Poppins;
+    transition: color .2s;
+}
+
+.day {
+    font-size: 28px;
+    margin-bottom: -10px;
+    display: block;
+}
+
+.month {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.news-content {
+    position: relative;
+    width: 100%;
+}
+
+.bbWrapper {
+    position: relative;
+    padding: 20px;
+    background-color: #101A26;
+    font-family: Poppins;
+    font-size: 13px !important;
+    color: #E1E1E1;
+    text-decoration: none;
+    border-radius: 0px 0px 0px 0px;
+    transition: color .2s;
+}
+
+.news-author {
+    text-align: end;
+    margin: 0;
+    color: #F1F1F1;
+}
+
+.news-author span {
+    font-style: italic;
+}
+
+.info-list {
+    position: relative;
+    width: 65vh;
+    padding: 1rem;
+    background: none;
+}
+
+.server {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 320px;
+    height: 75px;
+    background-color: #292929;
+    border-radius: 10px;
+    transition: opacity 1s;
+    opacity: .4;
+}
+
+.server:hover {
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+.server-img {
+    position: absolute;
+    width: 42px;
+    height: 45px;
+    top: 15px;
+    left: 15px;
+}
+
+.name {
+    position: absolute;
+    font: normal normal bold 17px/25px Poppins;
+    color: #E1E1E1;
+    top: 17px;
+    left: 70px;
+    transition: color .2s;
+}
+
+.desc {
+    position: absolute;
+    font: normal normal normal 11px/17px Poppins;
+    color: #E1E1E1;
+    transition: all .2s;
+    top: 40px;
+    left: 70px;
+    transition: color .2s;
+}
+
+.green {
+    color: #1AC707;
+}
+
+.red {
+    color: #FF0409;
+}
+
+.etat-text {
+    position: absolute;
+    top: 20px;
+    right: 14px;
+    width: 49px;
+    height: 33px;
+    background-color: #262626;
+    border-radius: 4px;
+    transition: background-color .2s;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: normal normal bold 13px/15px Poppins;
+    letter-spacing: 0px;
+    color: #E1E1E1;
+    transition: color .2s;
+}
+
+.online {
+    position: absolute;
+    top: -6px;
+    left: 41px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid #1A1A1A;
+    transition: all .2s;
+    background-color: #1AC707;
+}
+
+.online.off {
+    background-color: #FF0409;
+}
+
+.space-for-play {
+    margin-top: 200px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.write_history {
+    height: 23px;
+    width: 159px;
+    margin-top: 200px;
+    border-radius: 0;
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.txt_presentation {
+    margin-top: 20px;
+    width: 403px;
+    height: 51px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+
+
+.twitter-btn {
+    background-image: url('../../images/logo/twitter.svg');
+
+    margin-top: 83px;
+    background-position: 0 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #00000000;
+    object-fit: contain;
+    width: 27.5px;
+    height: 22px;
+    border: none;
+    padding: 0px;
+
+}
+
+.red_round {
+    position: absolute;
+    margin-left: 205px;
+    top: 59px;
+    width: 280px;
+    height: 53px;
+
+    /* Deep Blue */
+    background: #101A26;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.red_button {
+    margin-top: 74px;
+    background-image: url('../../images/logo/RedRound.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #00000000;
+    object-fit: contain;
+    border: none;
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+    z-index: 1000;
+}
+
+.top-bar-home {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+    /* Deep Blue */
+    background: #101A26;
+    opacity: 0.7;
+}
+
+.top-underbar-home {
+    margin-top: 26px;
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.PokeFree_Logo {
+    margin-left: 55px;
+    background-image: url('https://pokefree.fr/storage/img/launcher/icon-navbar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #00000000;
+    object-fit: contain;
+    border: none;
+    padding: 0px;
+    width: 45px;
+    height: 45px;
+}
+
+.top-underbar-home-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.top-underbar-home-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.account-btn {
+    background-image: url('../../images/logo/account.svg');
+    background-color: #00000002;
+    background-repeat: no-repeat;
+    background-size: contain;
+    object-fit: contain;
+    margin-right: 15px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 0px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+}
+
+
+
+
+
+
+
+#site-btn {
+    margin-top: 20px;
+    width: 130px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0);
+}
+
+#site-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#site-img {
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+#discord-btn {
+    border-radius: 20px;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    margin-top: 20px;
+    width: 130px;
+    height: 60px;
+}
+
+#discord-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#discord-img {
+    max-width: 100%;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.play-element {
+    margin-top: -10px;
+    margin-left: 130px;
+    margin-top: 0px;
+    transform: translate(-50%);
+    height: 50px;
+    width: 130px;
+    color: #F1F1F1;
+    font: normal normal bold 19px/29px Poppins;
+    text-align: center;
+}
+
+
+
+
+#box-account-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px 0px;
+    color: #FFFFFF;
+    background: #00000080;
+
+}
+
+#name-input {
+    width: 130px;
+    height: 40px;
+    background: rgba(90, 87, 87, 0);
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+#icon-account {
+    background: rgba(90, 87, 87, 0);
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+#icon-img {
+    margin-top: 5%;
+    margin-left: 5%;
+    max-width: 90%;
+    max-height: 90%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    z-index: 2;
+}
+
+
+.log-play {
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    height: 30%;
+    background: rgba(129, 129, 129, 0.4);
+    border: solid 5px #00000080;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
